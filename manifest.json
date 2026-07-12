@@ -1,0 +1,30 @@
+{
+  "id": "grounded-claims",
+  "title": "Grounded Claims App",
+  "industry": "Financial Services",
+  "industryId": "financial-services",
+  "specialization": "Grounded Claims",
+  "sourcePlatformGroup": "insurance-claims-platform",
+  "sources": [
+    "AIGroundedClaims",
+    "AISmallClaimsCourtGuide",
+    "ai-claims-litigation-early-warning-system",
+    "insuranceAgenc"
+  ],
+  "featureCount": 193,
+  "candidateFeatureCount": 264,
+  "eliminatedSimilarFeatures": 71,
+  "evidenceCount": 570,
+  "aiPageCount": 16,
+  "sourceAIPageCount": 16,
+  "featureEvidencePolicy": "Existing source routes, pages, APIs, models, schemas, and navigation only",
+  "optimizationPolicy": "Equivalent feature names are consolidated once per industry and assigned to one canonical app owner",
+  "database": "database.sqlite",
+  "databaseSeed": {
+    "seededProjects": 1,
+    "seededTables": 2,
+    "seededRows": 35
+  },
+  "visibleFeatureCount": 16,
+  "featureVisibilityMode": "seeded-or-ai"
+}
