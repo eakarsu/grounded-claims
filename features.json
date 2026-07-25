@@ -26,6 +26,96 @@
     ]
   },
   {
+    "name": "AI",
+    "canonicalKey": "ai",
+    "aliases": [],
+    "kinds": [
+      "ai-page",
+      "page"
+    ],
+    "routes": [
+      "/ai",
+      "/ai/claims-assistant",
+      "/ai/compliance-checker",
+      "/ai/email-composer",
+      "/ai/policy-comparison",
+      "/ai/quote-generator",
+      "/ai/risk-assessor",
+      "/ai/sentiment-analysis"
+    ],
+    "sourceProjects": [
+      "insuranceAgenc"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/grounded-claims"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "insuranceAgenc",
+        "path": "src/app/(dashboard)/ai/claims-assistant/page.tsx:1",
+        "route": "/ai/claims-assistant",
+        "originApp": "financial-services/grounded-claims"
+      },
+      {
+        "kind": "ai-page",
+        "sourceProject": "insuranceAgenc",
+        "path": "src/app/(dashboard)/ai/compliance-checker/page.tsx:1",
+        "route": "/ai/compliance-checker",
+        "originApp": "financial-services/grounded-claims"
+      },
+      {
+        "kind": "ai-page",
+        "sourceProject": "insuranceAgenc",
+        "path": "src/app/(dashboard)/ai/email-composer/page.tsx:1",
+        "route": "/ai/email-composer",
+        "originApp": "financial-services/grounded-claims"
+      },
+      {
+        "kind": "ai-page",
+        "sourceProject": "insuranceAgenc",
+        "path": "src/app/(dashboard)/ai/policy-comparison/page.tsx:1",
+        "route": "/ai/policy-comparison",
+        "originApp": "financial-services/grounded-claims"
+      },
+      {
+        "kind": "ai-page",
+        "sourceProject": "insuranceAgenc",
+        "path": "src/app/(dashboard)/ai/quote-generator/page.tsx:1",
+        "route": "/ai/quote-generator",
+        "originApp": "financial-services/grounded-claims"
+      },
+      {
+        "kind": "ai-page",
+        "sourceProject": "insuranceAgenc",
+        "path": "src/app/(dashboard)/ai/risk-assessor/page.tsx:1",
+        "route": "/ai/risk-assessor",
+        "originApp": "financial-services/grounded-claims"
+      },
+      {
+        "kind": "ai-page",
+        "sourceProject": "insuranceAgenc",
+        "path": "src/app/(dashboard)/ai/sentiment-analysis/page.tsx:1",
+        "route": "/ai/sentiment-analysis",
+        "originApp": "financial-services/grounded-claims"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "insuranceAgenc",
+        "path": "src/app/(dashboard)/ai/page.tsx",
+        "route": "/ai",
+        "originApp": "financial-services/grounded-claims"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "insuranceAgenc",
+        "path": "src/components/layout/Sidebar.tsx:197",
+        "route": "/ai",
+        "originApp": "financial-services/grounded-claims"
+      }
+    ]
+  },
+  {
     "name": "AI Assist",
     "canonicalKey": "ai assist",
     "aliases": [],
@@ -56,9 +146,12 @@
     "canonicalKey": "ai build grounding report",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "navigation"
     ],
-    "routes": [],
+    "routes": [
+      "/ai/grounding-report"
+    ],
     "sourceProjects": [
       "AIGroundedClaims"
     ],
@@ -66,6 +159,13 @@
       "financial-services/grounded-claims"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIGroundedClaims",
+        "path": "frontend/src/pages/AIGroundingReportPage.js",
+        "route": "/ai/grounding-report",
+        "originApp": "financial-services/grounded-claims"
+      },
       {
         "kind": "navigation",
         "sourceProject": "AIGroundedClaims",
@@ -136,6 +236,32 @@
     ]
   },
   {
+    "name": "AI Citation Coverage Scorer",
+    "canonicalKey": "ai citation coverage scorer",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/citation-coverage"
+    ],
+    "sourceProjects": [
+      "AIGroundedClaims"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/grounded-claims"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIGroundedClaims",
+        "path": "frontend/src/pages/AICitationCoveragePage.js",
+        "route": "/ai/citation-coverage",
+        "originApp": "financial-services/grounded-claims"
+      }
+    ]
+  },
+  {
     "name": "AI Citation Generate Page",
     "canonicalKey": "ai citation generate",
     "aliases": [],
@@ -166,9 +292,12 @@
     "canonicalKey": "ai citation generator",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "navigation"
     ],
-    "routes": [],
+    "routes": [
+      "/ai/citation-generate"
+    ],
     "sourceProjects": [
       "AIGroundedClaims"
     ],
@@ -176,6 +305,13 @@
       "financial-services/grounded-claims"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIGroundedClaims",
+        "path": "frontend/src/pages/AICitationGeneratePage.js",
+        "route": "/ai/citation-generate",
+        "originApp": "financial-services/grounded-claims"
+      },
       {
         "kind": "navigation",
         "sourceProject": "AIGroundedClaims",
@@ -222,13 +358,70 @@
     ]
   },
   {
+    "name": "AI Claim Novelty Duplicate",
+    "canonicalKey": "ai claim duplicate novelty",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/claim-novelty"
+    ],
+    "sourceProjects": [
+      "AIGroundedClaims"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/grounded-claims"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIGroundedClaims",
+        "path": "frontend/src/pages/AIClaimNoveltyPage.js",
+        "route": "/ai/claim-novelty",
+        "originApp": "financial-services/grounded-claims"
+      }
+    ]
+  },
+  {
     "name": "AI Contradiction Detect",
     "canonicalKey": "ai contradiction detect",
-    "aliases": [
-      "AI Contradiction Detect Page"
-    ],
+    "aliases": [],
     "kinds": [
-      "navigation",
+      "ai-page",
+      "navigation"
+    ],
+    "routes": [
+      "/ai/contradiction-detect"
+    ],
+    "sourceProjects": [
+      "AIGroundedClaims"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/grounded-claims"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIGroundedClaims",
+        "path": "frontend/src/pages/AIContradictionDetectPage.js",
+        "route": "/ai/contradiction-detect",
+        "originApp": "financial-services/grounded-claims"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIGroundedClaims",
+        "path": "frontend/src/components/Sidebar.js:21",
+        "route": "",
+        "originApp": "financial-services/grounded-claims"
+      }
+    ]
+  },
+  {
+    "name": "AI Contradiction Detect Page",
+    "canonicalKey": "ai contradiction detect",
+    "aliases": [],
+    "kinds": [
       "page"
     ],
     "routes": [
@@ -241,13 +434,6 @@
       "financial-services/grounded-claims"
     ],
     "evidence": [
-      {
-        "kind": "navigation",
-        "sourceProject": "AIGroundedClaims",
-        "path": "frontend/src/components/Sidebar.js:21",
-        "route": "",
-        "originApp": "financial-services/grounded-claims"
-      },
       {
         "kind": "page",
         "sourceProject": "AIGroundedClaims",
@@ -284,11 +470,42 @@
   {
     "name": "AI Entailment Score",
     "canonicalKey": "ai entailment score",
-    "aliases": [
-      "AI Entailment Score Page"
-    ],
+    "aliases": [],
     "kinds": [
-      "navigation",
+      "ai-page",
+      "navigation"
+    ],
+    "routes": [
+      "/ai/entailment-score"
+    ],
+    "sourceProjects": [
+      "AIGroundedClaims"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/grounded-claims"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIGroundedClaims",
+        "path": "frontend/src/pages/AIEntailmentScorePage.js",
+        "route": "/ai/entailment-score",
+        "originApp": "financial-services/grounded-claims"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIGroundedClaims",
+        "path": "frontend/src/components/Sidebar.js:24",
+        "route": "",
+        "originApp": "financial-services/grounded-claims"
+      }
+    ]
+  },
+  {
+    "name": "AI Entailment Score Page",
+    "canonicalKey": "ai entailment score",
+    "aliases": [],
+    "kinds": [
       "page"
     ],
     "routes": [
@@ -301,13 +518,6 @@
       "financial-services/grounded-claims"
     ],
     "evidence": [
-      {
-        "kind": "navigation",
-        "sourceProject": "AIGroundedClaims",
-        "path": "frontend/src/components/Sidebar.js:24",
-        "route": "",
-        "originApp": "financial-services/grounded-claims"
-      },
       {
         "kind": "page",
         "sourceProject": "AIGroundedClaims",
@@ -368,13 +578,15 @@
     ]
   },
   {
-    "name": "AI Extract Atomic Claims",
-    "canonicalKey": "ai atomic claim extract",
+    "name": "AI Evidence Retriever Llm Rerank",
+    "canonicalKey": "ai evidence llm rerank retriever",
     "aliases": [],
     "kinds": [
-      "navigation"
+      "ai-page"
     ],
-    "routes": [],
+    "routes": [
+      "/ai/evidence-retrieve"
+    ],
     "sourceProjects": [
       "AIGroundedClaims"
     ],
@@ -382,6 +594,40 @@
       "financial-services/grounded-claims"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIGroundedClaims",
+        "path": "frontend/src/pages/AIEvidenceRetrievePage.js",
+        "route": "/ai/evidence-retrieve",
+        "originApp": "financial-services/grounded-claims"
+      }
+    ]
+  },
+  {
+    "name": "AI Extract Atomic Claims",
+    "canonicalKey": "ai atomic claim extract",
+    "aliases": [],
+    "kinds": [
+      "ai-page",
+      "navigation"
+    ],
+    "routes": [
+      "/ai/extract-claims"
+    ],
+    "sourceProjects": [
+      "AIGroundedClaims"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/grounded-claims"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIGroundedClaims",
+        "path": "frontend/src/pages/AIExtractClaimsPage.js",
+        "route": "/ai/extract-claims",
+        "originApp": "financial-services/grounded-claims"
+      },
       {
         "kind": "navigation",
         "sourceProject": "AIGroundedClaims",
@@ -420,11 +666,42 @@
   {
     "name": "AI Ground Claims",
     "canonicalKey": "ai claim ground",
-    "aliases": [
-      "AI Ground Claims Page"
-    ],
+    "aliases": [],
     "kinds": [
-      "navigation",
+      "ai-page",
+      "navigation"
+    ],
+    "routes": [
+      "/ai/ground-claims"
+    ],
+    "sourceProjects": [
+      "AIGroundedClaims"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/grounded-claims"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIGroundedClaims",
+        "path": "frontend/src/pages/AIGroundClaimsPage.js",
+        "route": "/ai/ground-claims",
+        "originApp": "financial-services/grounded-claims"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIGroundedClaims",
+        "path": "frontend/src/components/Sidebar.js:19",
+        "route": "",
+        "originApp": "financial-services/grounded-claims"
+      }
+    ]
+  },
+  {
+    "name": "AI Ground Claims Page",
+    "canonicalKey": "ai claim ground",
+    "aliases": [],
+    "kinds": [
       "page"
     ],
     "routes": [
@@ -437,13 +714,6 @@
       "financial-services/grounded-claims"
     ],
     "evidence": [
-      {
-        "kind": "navigation",
-        "sourceProject": "AIGroundedClaims",
-        "path": "frontend/src/components/Sidebar.js:19",
-        "route": "",
-        "originApp": "financial-services/grounded-claims"
-      },
       {
         "kind": "page",
         "sourceProject": "AIGroundedClaims",
@@ -510,9 +780,12 @@
     "canonicalKey": "ai flagger hallucination",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "navigation"
     ],
-    "routes": [],
+    "routes": [
+      "/ai/hallucination-flag"
+    ],
     "sourceProjects": [
       "AIGroundedClaims"
     ],
@@ -520,6 +793,13 @@
       "financial-services/grounded-claims"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIGroundedClaims",
+        "path": "frontend/src/pages/AIHallucinationFlagPage.js",
+        "route": "/ai/hallucination-flag",
+        "originApp": "financial-services/grounded-claims"
+      },
       {
         "kind": "navigation",
         "sourceProject": "AIGroundedClaims",
@@ -566,6 +846,32 @@
     ]
   },
   {
+    "name": "AI Numeric Unit Consistency",
+    "canonicalKey": "ai consistency numeric unit",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/numeric-consistency"
+    ],
+    "sourceProjects": [
+      "AIGroundedClaims"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/grounded-claims"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIGroundedClaims",
+        "path": "frontend/src/pages/AINumericConsistencyPage.js",
+        "route": "/ai/numeric-consistency",
+        "originApp": "financial-services/grounded-claims"
+      }
+    ]
+  },
+  {
     "name": "AI Paraphrase Link Page",
     "canonicalKey": "ai link paraphrase",
     "aliases": [],
@@ -596,9 +902,12 @@
     "canonicalKey": "ai linker paraphrase",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "navigation"
     ],
-    "routes": [],
+    "routes": [
+      "/ai/paraphrase-link"
+    ],
     "sourceProjects": [
       "AIGroundedClaims"
     ],
@@ -606,6 +915,13 @@
       "financial-services/grounded-claims"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIGroundedClaims",
+        "path": "frontend/src/pages/AIParaphraseLinkPage.js",
+        "route": "/ai/paraphrase-link",
+        "originApp": "financial-services/grounded-claims"
+      },
       {
         "kind": "navigation",
         "sourceProject": "AIGroundedClaims",
@@ -620,9 +936,12 @@
     "canonicalKey": "ai quote verifier",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "navigation"
     ],
-    "routes": [],
+    "routes": [
+      "/ai/quote-verify"
+    ],
     "sourceProjects": [
       "AIGroundedClaims"
     ],
@@ -630,6 +949,13 @@
       "financial-services/grounded-claims"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIGroundedClaims",
+        "path": "frontend/src/pages/AIQuoteVerifyPage.js",
+        "route": "/ai/quote-verify",
+        "originApp": "financial-services/grounded-claims"
+      },
       {
         "kind": "navigation",
         "sourceProject": "AIGroundedClaims",
@@ -702,6 +1028,32 @@
     ]
   },
   {
+    "name": "AI Retrieval Grounded Answer",
+    "canonicalKey": "ai answer grounded retrieval",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/rag-answer"
+    ],
+    "sourceProjects": [
+      "AIGroundedClaims"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/grounded-claims"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIGroundedClaims",
+        "path": "frontend/src/pages/AIRagAnswerPage.js",
+        "route": "/ai/rag-answer",
+        "originApp": "financial-services/grounded-claims"
+      }
+    ]
+  },
+  {
     "name": "AI Source Credibility",
     "canonicalKey": "ai credibility source",
     "aliases": [
@@ -738,6 +1090,32 @@
     ]
   },
   {
+    "name": "AI Source Credibility Ranker",
+    "canonicalKey": "ai credibility ranker source",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/source-credibility"
+    ],
+    "sourceProjects": [
+      "AIGroundedClaims"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/grounded-claims"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIGroundedClaims",
+        "path": "frontend/src/pages/AISourceCredibilityPage.js",
+        "route": "/ai/source-credibility",
+        "originApp": "financial-services/grounded-claims"
+      }
+    ]
+  },
+  {
     "name": "AI Source Deduplicate Page",
     "canonicalKey": "ai deduplicate source",
     "aliases": [],
@@ -768,9 +1146,12 @@
     "canonicalKey": "ai deduplicator source",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "navigation"
     ],
-    "routes": [],
+    "routes": [
+      "/ai/source-deduplicate"
+    ],
     "sourceProjects": [
       "AIGroundedClaims"
     ],
@@ -778,6 +1159,13 @@
       "financial-services/grounded-claims"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIGroundedClaims",
+        "path": "frontend/src/pages/AISourceDeduplicatePage.js",
+        "route": "/ai/source-deduplicate",
+        "originApp": "financial-services/grounded-claims"
+      },
       {
         "kind": "navigation",
         "sourceProject": "AIGroundedClaims",
@@ -1007,6 +1395,7 @@
     "canonicalKey": "appeal assessment",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api",
       "page"
     ],
@@ -1022,6 +1411,13 @@
       "financial-services/grounded-claims"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AISmallClaimsCourtGuide",
+        "path": "frontend/src/pages/AppealAssessment.jsx:1",
+        "route": "/appeal-assessment",
+        "originApp": "financial-services/grounded-claims"
+      },
       {
         "kind": "api",
         "sourceProject": "AISmallClaimsCourtGuide",
@@ -1605,6 +2001,32 @@
         "sourceProject": "insuranceAgenc",
         "path": "src/app/(dashboard)/batch10/cf-voice-quote-intake-call-in-ai/page.tsx",
         "route": "/batch10/cf-voice-quote-intake-call-in-ai",
+        "originApp": "financial-services/grounded-claims"
+      }
+    ]
+  },
+  {
+    "name": "Chat",
+    "canonicalKey": "chat",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/chatbot"
+    ],
+    "sourceProjects": [
+      "insuranceAgenc"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/grounded-claims"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "insuranceAgenc",
+        "path": "src/app/(dashboard)/ai/chatbot/page.tsx:1",
+        "route": "/ai/chatbot",
         "originApp": "financial-services/grounded-claims"
       }
     ]
@@ -2744,6 +3166,7 @@
     "canonicalKey": "checklist court procedure",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api",
       "page"
     ],
@@ -2759,6 +3182,13 @@
       "financial-services/grounded-claims"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AISmallClaimsCourtGuide",
+        "path": "frontend/src/pages/CourtProcedureChecklist.jsx:1",
+        "route": "/court-procedure-checklist",
+        "originApp": "financial-services/grounded-claims"
+      },
       {
         "kind": "api",
         "sourceProject": "AISmallClaimsCourtGuide",
@@ -2785,6 +3215,32 @@
         "sourceProject": "AISmallClaimsCourtGuide",
         "path": "frontend/src/pages/CourtProcedureChecklist.jsx",
         "route": "/CourtProcedureChecklist",
+        "originApp": "financial-services/grounded-claims"
+      }
+    ]
+  },
+  {
+    "name": "Coverage Advisor",
+    "canonicalKey": "advisor coverage",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/clients/[id]"
+    ],
+    "sourceProjects": [
+      "insuranceAgenc"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/grounded-claims"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "insuranceAgenc",
+        "path": "src/app/(dashboard)/clients/[id]/page.tsx:1",
+        "route": "/clients/[id]",
         "originApp": "financial-services/grounded-claims"
       }
     ]
@@ -3876,6 +4332,7 @@
     "canonicalKey": "evidence organizer",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api",
       "page"
     ],
@@ -3891,6 +4348,13 @@
       "financial-services/grounded-claims"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AISmallClaimsCourtGuide",
+        "path": "frontend/src/pages/EvidenceOrganizer.jsx:1",
+        "route": "/evidence-organizer",
+        "originApp": "financial-services/grounded-claims"
+      },
       {
         "kind": "api",
         "sourceProject": "AISmallClaimsCourtGuide",
@@ -6856,7 +7320,6 @@
       "AIAccessibilityAuditAgent",
       "AIAntiFraud",
       "AICarbonCreditMarketplaceVerifier",
-      "AIClimateFinanceCarbonRegistry",
       "AICreditRiskAssessmentAgent",
       "AIDebtCollectionOptimizer",
       "AIForensicAccountingInvestigator",
@@ -6871,17 +7334,9 @@
       "financial-services/carbon-credit-marketplace-verifier",
       "financial-services/grounded-claims",
       "financial-services/invoice-processing",
-      "financial-services/smart-contract-auditor",
       "financial-services/trading-merged"
     ],
     "evidence": [
-      {
-        "kind": "api",
-        "sourceProject": "AIClimateFinanceCarbonRegistry",
-        "path": "backend/routes/ai.js:1001",
-        "route": "/results",
-        "originApp": "financial-services/smart-contract-auditor"
-      },
       {
         "kind": "api",
         "sourceProject": "AIAccessibilityAuditAgent",
@@ -7216,6 +7671,7 @@
     "canonicalKey": "calculator settlement",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api",
       "page"
     ],
@@ -7225,14 +7681,19 @@
       "/settlement-calculator"
     ],
     "sourceProjects": [
-      "AIDebtCollectionOptimizer",
       "AISmallClaimsCourtGuide"
     ],
     "consolidatedFromApps": [
-      "financial-services/carbon-credit-marketplace-verifier",
       "financial-services/grounded-claims"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AISmallClaimsCourtGuide",
+        "path": "frontend/src/pages/SettlementCalculator.jsx:1",
+        "route": "/settlement-calculator",
+        "originApp": "financial-services/grounded-claims"
+      },
       {
         "kind": "api",
         "sourceProject": "AISmallClaimsCourtGuide",
@@ -7260,13 +7721,6 @@
         "path": "frontend/src/pages/SettlementCalculator.jsx",
         "route": "/SettlementCalculator",
         "originApp": "financial-services/grounded-claims"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIDebtCollectionOptimizer",
-        "path": "client/src/pages/SettlementCalculator.jsx",
-        "route": "/SettlementCalculator",
-        "originApp": "financial-services/carbon-credit-marketplace-verifier"
       }
     ]
   },
@@ -7941,7 +8395,6 @@
       "/templates"
     ],
     "sourceProjects": [
-      "AIAuditWorkpaperAutomation",
       "AISmartContractAuditor",
       "AiTaxPrep",
       "aiFinancePlatform",
@@ -7950,7 +8403,6 @@
     ],
     "consolidatedFromApps": [
       "financial-services/aml-transaction-monitoring",
-      "financial-services/audit-workpaper-automation",
       "financial-services/grounded-claims",
       "financial-services/invoice-processing",
       "financial-services/smart-contract-auditor",
@@ -7970,13 +8422,6 @@
         "path": "frontend/src/pages/compliance-templates/TemplateList.tsx",
         "route": "/compliance-templates/TemplateList",
         "originApp": "financial-services/smart-contract-auditor"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIAuditWorkpaperAutomation",
-        "path": "server/routes/ai.js:599",
-        "route": "/templates",
-        "originApp": "financial-services/audit-workpaper-automation"
       },
       {
         "kind": "api",
@@ -8150,6 +8595,7 @@
     "canonicalKey": "guide statement witness",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api",
       "page"
     ],
@@ -8165,6 +8611,13 @@
       "financial-services/grounded-claims"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AISmallClaimsCourtGuide",
+        "path": "frontend/src/pages/WitnessStatementGuide.jsx:1",
+        "route": "/witness-statement-guide",
+        "originApp": "financial-services/grounded-claims"
+      },
       {
         "kind": "api",
         "sourceProject": "AISmallClaimsCourtGuide",

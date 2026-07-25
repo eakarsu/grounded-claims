@@ -11,12 +11,12 @@
     "ai-claims-litigation-early-warning-system",
     "insuranceAgenc"
   ],
-  "featureCount": 194,
-  "candidateFeatureCount": 266,
-  "eliminatedSimilarFeatures": 72,
-  "evidenceCount": 586,
-  "aiPageCount": 16,
-  "sourceAIPageCount": 16,
+  "featureCount": 206,
+  "candidateFeatureCount": 274,
+  "eliminatedSimilarFeatures": 68,
+  "evidenceCount": 615,
+  "aiPageCount": 30,
+  "sourceAIPageCount": 30,
   "featureEvidencePolicy": "Existing source routes, pages, APIs, models, schemas, and navigation only",
   "optimizationPolicy": "Equivalent feature names are consolidated once per industry and assigned to one canonical app owner",
   "database": "database.sqlite",
@@ -25,6 +25,6 @@
     "seededTables": 2,
     "seededRows": 35
   },
-  "visibleFeatureCount": 16,
+  "visibleFeatureCount": 24,
   "featureVisibilityMode": "seeded-or-ai"
 }
