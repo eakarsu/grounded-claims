@@ -1,5 +1,57 @@
 [
   {
+    "name": "Accuracy Heatmap",
+    "canonicalKey": "accuracy heatmap",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/accuracy-heatmap"
+    ],
+    "sourceProjects": [
+      "AIGroundedClaims"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/grounded-claims"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIGroundedClaims",
+        "path": "backend/routes/customViews.js:36",
+        "route": "/accuracy-heatmap",
+        "originApp": "financial-services/grounded-claims"
+      }
+    ]
+  },
+  {
+    "name": "AI Assist",
+    "canonicalKey": "ai assist",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/ai-assist"
+    ],
+    "sourceProjects": [
+      "AIGroundedClaims"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/grounded-claims"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIGroundedClaims",
+        "path": "backend/routes/claimVerificationWorkflow.js:10",
+        "route": "/ai-assist",
+        "originApp": "financial-services/grounded-claims"
+      }
+    ]
+  },
+  {
     "name": "AI Build Grounding Report",
     "canonicalKey": "ai build grounding report",
     "aliases": [],
@@ -341,7 +393,7 @@
   },
   {
     "name": "AI Extract Claims Page",
-    "canonicalKey": "ai claims extract",
+    "canonicalKey": "ai claim extract",
     "aliases": [],
     "kinds": [
       "page"
@@ -366,10 +418,10 @@
     ]
   },
   {
-    "name": "AI Ground Claims Page",
+    "name": "AI Ground Claims",
     "canonicalKey": "ai claim ground",
     "aliases": [
-      "AI Ground Claims"
+      "AI Ground Claims Page"
     ],
     "kinds": [
       "navigation",
@@ -746,32 +798,15 @@
       "page"
     ],
     "routes": [
-      "/ai-suite",
       "/ai/ai-suite"
     ],
     "sourceProjects": [
-      "insuranceAgenc",
-      "investment"
+      "insuranceAgenc"
     ],
     "consolidatedFromApps": [
-      "financial-services/freqtrade-merged",
       "financial-services/grounded-claims"
     ],
     "evidence": [
-      {
-        "kind": "page",
-        "sourceProject": "investment",
-        "path": "web/app/ai-suite/page.tsx",
-        "route": "/ai-suite",
-        "originApp": "financial-services/freqtrade-merged"
-      },
-      {
-        "kind": "navigation",
-        "sourceProject": "investment",
-        "path": "web/components/nav.tsx:15",
-        "route": "",
-        "originApp": "financial-services/freqtrade-merged"
-      },
       {
         "kind": "page",
         "sourceProject": "insuranceAgenc",
@@ -791,58 +826,6 @@
         "sourceProject": "insuranceAgenc",
         "path": "src/components/layout/Sidebar.tsx:215",
         "route": "",
-        "originApp": "financial-services/grounded-claims"
-      }
-    ]
-  },
-  {
-    "name": "API Docs",
-    "canonicalKey": "api docs",
-    "aliases": [],
-    "kinds": [
-      "page"
-    ],
-    "routes": [
-      "/api-docs"
-    ],
-    "sourceProjects": [
-      "insuranceAgenc"
-    ],
-    "consolidatedFromApps": [
-      "financial-services/grounded-claims"
-    ],
-    "evidence": [
-      {
-        "kind": "page",
-        "sourceProject": "insuranceAgenc",
-        "path": "src/app/api-docs/page.tsx",
-        "route": "/api-docs",
-        "originApp": "financial-services/grounded-claims"
-      }
-    ]
-  },
-  {
-    "name": "Accuracy Heatmap",
-    "canonicalKey": "accuracy heatmap",
-    "aliases": [],
-    "kinds": [
-      "api"
-    ],
-    "routes": [
-      "/accuracy-heatmap"
-    ],
-    "sourceProjects": [
-      "AIGroundedClaims"
-    ],
-    "consolidatedFromApps": [
-      "financial-services/grounded-claims"
-    ],
-    "evidence": [
-      {
-        "kind": "api",
-        "sourceProject": "AIGroundedClaims",
-        "path": "backend/routes/customViews.js:36",
-        "route": "/accuracy-heatmap",
         "originApp": "financial-services/grounded-claims"
       }
     ]
@@ -994,6 +977,32 @@
     ]
   },
   {
+    "name": "API Docs",
+    "canonicalKey": "api docs",
+    "aliases": [],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/api-docs"
+    ],
+    "sourceProjects": [
+      "insuranceAgenc"
+    ],
+    "consolidatedFromApps": [
+      "financial-services/grounded-claims"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "insuranceAgenc",
+        "path": "src/app/api-docs/page.tsx",
+        "route": "/api-docs",
+        "originApp": "financial-services/grounded-claims"
+      }
+    ]
+  },
+  {
     "name": "Appeal Assessment",
     "canonicalKey": "appeal assessment",
     "aliases": [],
@@ -1016,7 +1025,7 @@
       {
         "kind": "api",
         "sourceProject": "AISmallClaimsCourtGuide",
-        "path": "backend/routes/ai.js:406",
+        "path": "backend/routes/ai.js:410",
         "route": "/appeal-assessment",
         "originApp": "financial-services/grounded-claims"
       },
@@ -1396,7 +1405,7 @@
   },
   {
     "name": "Cf Multimodal Claims Fraud Detector Text Photos",
-    "canonicalKey": "cf claims detector fraud multimodal photo text",
+    "canonicalKey": "cf claim detector fraud multimodal photo text",
     "aliases": [],
     "kinds": [
       "page"
@@ -1927,27 +1936,36 @@
   {
     "name": "Claims",
     "canonicalKey": "claim",
-    "aliases": [],
+    "aliases": [
+      "Claim",
+      "Claims Page"
+    ],
     "kinds": [
       "api",
       "navigation",
       "page"
     ],
     "routes": [
+      "/ClaimsPage",
       "/claims",
       "/customers/:customer_id/claims",
+      "/integrations/claim",
       "/portal/claims"
     ],
     "sourceProjects": [
       "AIClimateFinanceCarbonRegistry",
       "AIGroundedClaims",
       "AIInsuranceClaimsAdjuster",
+      "AIWealthManagementRoboAdvisor",
+      "AiTaxPrep",
       "insuranceAgenc"
     ],
     "consolidatedFromApps": [
       "financial-services/grounded-claims",
       "financial-services/insurance-claims-adjuster",
-      "financial-services/smart-contract-auditor"
+      "financial-services/invoice-processing",
+      "financial-services/smart-contract-auditor",
+      "financial-services/trading-merged"
     ],
     "evidence": [
       {
@@ -1977,6 +1995,34 @@
         "path": "frontend/src/components/Sidebar.js:21",
         "route": "/claims",
         "originApp": "financial-services/smart-contract-auditor"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIClimateFinanceCarbonRegistry",
+        "path": "frontend/src/pages/ClaimsPage.js",
+        "route": "/ClaimsPage",
+        "originApp": "financial-services/smart-contract-auditor"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiTaxPrep",
+        "path": "server/governance/router.js:331",
+        "route": "/integrations/claim",
+        "originApp": "financial-services/invoice-processing"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIWealthManagementRoboAdvisor",
+        "path": "server/governance/router.js:331",
+        "route": "/integrations/claim",
+        "originApp": "financial-services/trading-merged"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIGroundedClaims",
+        "path": "backend/routes/claimVerificationWorkflow.js:25",
+        "route": "/claims",
+        "originApp": "financial-services/grounded-claims"
       },
       {
         "kind": "navigation",
@@ -2042,6 +2088,13 @@
         "originApp": "financial-services/grounded-claims"
       },
       {
+        "kind": "page",
+        "sourceProject": "AIGroundedClaims",
+        "path": "frontend/src/pages/ClaimsPage.js",
+        "route": "/ClaimsPage",
+        "originApp": "financial-services/grounded-claims"
+      },
+      {
         "kind": "api",
         "sourceProject": "AIInsuranceClaimsAdjuster",
         "path": "backend/routes/customerPortal.js:57",
@@ -2059,7 +2112,7 @@
   },
   {
     "name": "Claims Assistant",
-    "canonicalKey": "assistant claims",
+    "canonicalKey": "assistant claim",
     "aliases": [],
     "kinds": [
       "navigation",
@@ -2157,7 +2210,8 @@
     "name": "Clients",
     "canonicalKey": "client",
     "aliases": [
-      "Client Management"
+      "Client Management",
+      "Clients Page"
     ],
     "kinds": [
       "navigation",
@@ -2165,6 +2219,7 @@
     ],
     "routes": [
       "/Clients",
+      "/ClientsPage",
       "/clients",
       "/dashboard/clients",
       "clients"
@@ -2215,7 +2270,7 @@
       {
         "kind": "page",
         "sourceProject": "multiverseinvestment",
-        "path": "frontend/src/App.jsx:95",
+        "path": "frontend/src/App.jsx:118",
         "route": "/clients",
         "originApp": "financial-services/freqtrade-merged"
       },
@@ -2231,6 +2286,13 @@
         "sourceProject": "multiverseinvestment",
         "path": "frontend/src/pages/Dashboard.jsx:12",
         "route": "/clients",
+        "originApp": "financial-services/freqtrade-merged"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "multiverseinvestment",
+        "path": "frontend/src/pages/ClientsPage.jsx",
+        "route": "/ClientsPage",
         "originApp": "financial-services/freqtrade-merged"
       },
       {
@@ -2292,7 +2354,7 @@
       {
         "kind": "navigation",
         "sourceProject": "financialServices",
-        "path": "src/components/layout/Sidebar.tsx:25",
+        "path": "src/components/layout/Sidebar.tsx:24",
         "route": "",
         "originApp": "financial-services/aml-transaction-monitoring"
       },
@@ -2505,7 +2567,7 @@
       {
         "kind": "api",
         "sourceProject": "AISmallClaimsCourtGuide",
-        "path": "backend/routes/ai.js:137",
+        "path": "backend/routes/ai.js:141",
         "route": "/draft-complaint",
         "originApp": "financial-services/grounded-claims"
       }
@@ -2700,7 +2762,7 @@
       {
         "kind": "api",
         "sourceProject": "AISmallClaimsCourtGuide",
-        "path": "backend/routes/ai.js:350",
+        "path": "backend/routes/ai.js:354",
         "route": "/court-procedure-checklist",
         "originApp": "financial-services/grounded-claims"
       },
@@ -2951,7 +3013,7 @@
       {
         "kind": "api",
         "sourceProject": "AISmallClaimsCourtGuide",
-        "path": "backend/routes/ai.js:87",
+        "path": "backend/routes/ai.js:91",
         "route": "/demand-letter",
         "originApp": "financial-services/grounded-claims"
       },
@@ -3168,7 +3230,7 @@
       {
         "kind": "page",
         "sourceProject": "multiverseinvestment",
-        "path": "frontend/src/App.jsx:131",
+        "path": "frontend/src/App.jsx:154",
         "route": "/gap/document-management",
         "originApp": "financial-services/freqtrade-merged"
       },
@@ -3264,6 +3326,13 @@
         "originApp": "financial-services/grounded-claims"
       },
       {
+        "kind": "page",
+        "sourceProject": "AIGroundedClaims",
+        "path": "frontend/src/pages/DocumentsPage.js",
+        "route": "/DocumentsPage",
+        "originApp": "financial-services/grounded-claims"
+      },
+      {
         "kind": "api",
         "sourceProject": "AIInsuranceClaimsAdjuster",
         "path": "backend/routes/customerPortal.js:69",
@@ -3280,7 +3349,7 @@
       {
         "kind": "navigation",
         "sourceProject": "financialServices",
-        "path": "src/components/layout/Sidebar.tsx:26",
+        "path": "src/components/layout/Sidebar.tsx:25",
         "route": "",
         "originApp": "financial-services/aml-transaction-monitoring"
       },
@@ -3318,13 +3387,6 @@
         "path": "client/src/pages/Documents.jsx",
         "route": "/Documents",
         "originApp": "financial-services/carbon-credit-marketplace-verifier"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIGroundedClaims",
-        "path": "frontend/src/pages/DocumentsPage.js",
-        "route": "/DocumentsPage",
-        "originApp": "financial-services/grounded-claims"
       }
     ]
   },
@@ -3832,7 +3894,7 @@
       {
         "kind": "api",
         "sourceProject": "AISmallClaimsCourtGuide",
-        "path": "backend/routes/ai.js:293",
+        "path": "backend/routes/ai.js:297",
         "route": "/evidence-organizer",
         "originApp": "financial-services/grounded-claims"
       },
@@ -4733,7 +4795,7 @@
   },
   {
     "name": "Gap No Reinsurance Treaty Analytics AI",
-    "canonicalKey": "ai analytics gap no reinsurance treaty",
+    "canonicalKey": "ai analytic gap no reinsurance treaty",
     "aliases": [],
     "kinds": [
       "page"
@@ -4793,7 +4855,7 @@
   },
   {
     "name": "Gap No Statute Of Limitations Checker",
-    "canonicalKey": "checker gap limitations no of statute",
+    "canonicalKey": "checker gap limitation no of statute",
     "aliases": [],
     "kinds": [
       "page"
@@ -5025,7 +5087,7 @@
       {
         "kind": "api",
         "sourceProject": "AISmallClaimsCourtGuide",
-        "path": "backend/routes/ai.js:193",
+        "path": "backend/routes/ai.js:197",
         "route": "/hearing-prep",
         "originApp": "financial-services/grounded-claims"
       },
@@ -5166,7 +5228,7 @@
       {
         "kind": "api",
         "sourceProject": "AISmallClaimsCourtGuide",
-        "path": "backend/routes/ai.js:47",
+        "path": "backend/routes/ai.js:51",
         "route": "/jurisdiction-check",
         "originApp": "financial-services/grounded-claims"
       }
@@ -5740,13 +5802,15 @@
     "name": "Payments",
     "canonicalKey": "payment",
     "aliases": [
-      "Payment Details"
+      "Payment Details",
+      "Payments Page"
     ],
     "kinds": [
       "navigation",
       "page"
     ],
     "routes": [
+      "/PaymentsPage",
       "/feature/payments",
       "/payments",
       "/portal/payments"
@@ -5767,7 +5831,7 @@
       {
         "kind": "page",
         "sourceProject": "multiverseinvestment",
-        "path": "frontend/src/App.jsx:123",
+        "path": "frontend/src/App.jsx:146",
         "route": "/payments",
         "originApp": "financial-services/freqtrade-merged"
       },
@@ -5783,6 +5847,13 @@
         "sourceProject": "multiverseinvestment",
         "path": "frontend/src/pages/Dashboard.jsx:33",
         "route": "/payments",
+        "originApp": "financial-services/freqtrade-merged"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "multiverseinvestment",
+        "path": "frontend/src/pages/PaymentsPage.jsx",
+        "route": "/PaymentsPage",
         "originApp": "financial-services/freqtrade-merged"
       },
       {
@@ -5957,6 +6028,7 @@
     "name": "Policies",
     "canonicalKey": "policy",
     "aliases": [
+      "Policy",
       "Policy Management"
     ],
     "kinds": [
@@ -5968,19 +6040,24 @@
       "/Policies",
       "/enz/policies",
       "/policies",
+      "/policy",
       "/portal/policies"
     ],
     "sourceProjects": [
+      "AIDebtCollectionOptimizer",
       "AIExpenseReportAuditor",
       "AIInsuranceClaimsAdjuster",
       "AIInsuranceUnderwritingAgent",
       "AISOXAuditAutomation",
+      "AiFinancialReportGenerator",
       "insuranceAgenc",
       "my-aave-next-figma"
     ],
     "consolidatedFromApps": [
       "financial-services/aave-protocol-v2-merged",
+      "financial-services/aml-transaction-monitoring",
       "financial-services/audit-workpaper-automation",
+      "financial-services/carbon-credit-marketplace-verifier",
       "financial-services/grounded-claims",
       "financial-services/insurance-claims-adjuster",
       "financial-services/invoice-processing"
@@ -6001,11 +6078,25 @@
         "originApp": "financial-services/aave-protocol-v2-merged"
       },
       {
+        "kind": "api",
+        "sourceProject": "AISOXAuditAutomation",
+        "path": "server/governance/routerFactory.js:52",
+        "route": "/policy",
+        "originApp": "financial-services/audit-workpaper-automation"
+      },
+      {
         "kind": "page",
         "sourceProject": "AISOXAuditAutomation",
         "path": "client/src/components/Layout.jsx:35",
         "route": "/policies",
         "originApp": "financial-services/audit-workpaper-automation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIExpenseReportAuditor",
+        "path": "server/governance/routerFactory.js:41",
+        "route": "/policy",
+        "originApp": "financial-services/invoice-processing"
       },
       {
         "kind": "page",
@@ -6104,6 +6195,20 @@
         "path": "frontend/src/navigation.js:2",
         "route": "",
         "originApp": "financial-services/insurance-claims-adjuster"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiFinancialReportGenerator",
+        "path": "backend/governance/routerFactory.js:68",
+        "route": "/policy",
+        "originApp": "financial-services/aml-transaction-monitoring"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIDebtCollectionOptimizer",
+        "path": "server/routes/governedWorkflow.js:33",
+        "route": "/policy",
+        "originApp": "financial-services/carbon-credit-marketplace-verifier"
       }
     ]
   },
@@ -6208,12 +6313,15 @@
   {
     "name": "Proposals",
     "canonicalKey": "proposal",
-    "aliases": [],
+    "aliases": [
+      "Proposals Page"
+    ],
     "kinds": [
       "navigation",
       "page"
     ],
     "routes": [
+      "/ProposalsPage",
       "/portal/proposals",
       "/proposals",
       "/quotes/proposals"
@@ -6230,7 +6338,7 @@
       {
         "kind": "page",
         "sourceProject": "multiverseinvestment",
-        "path": "frontend/src/App.jsx:101",
+        "path": "frontend/src/App.jsx:124",
         "route": "/proposals",
         "originApp": "financial-services/freqtrade-merged"
       },
@@ -6246,6 +6354,13 @@
         "sourceProject": "multiverseinvestment",
         "path": "frontend/src/pages/Dashboard.jsx:15",
         "route": "/proposals",
+        "originApp": "financial-services/freqtrade-merged"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "multiverseinvestment",
+        "path": "frontend/src/pages/ProposalsPage.jsx",
+        "route": "/ProposalsPage",
         "originApp": "financial-services/freqtrade-merged"
       },
       {
@@ -6726,12 +6841,15 @@
   {
     "name": "Results",
     "canonicalKey": "result",
-    "aliases": [],
+    "aliases": [
+      "Result"
+    ],
     "kinds": [
       "api",
       "navigation"
     ],
     "routes": [
+      "/integrations/:outboxId/result",
       "/results"
     ],
     "sourceProjects": [
@@ -6741,6 +6859,9 @@
       "AIClimateFinanceCarbonRegistry",
       "AICreditRiskAssessmentAgent",
       "AIDebtCollectionOptimizer",
+      "AIForensicAccountingInvestigator",
+      "AIWealthManagementRoboAdvisor",
+      "AiTaxPrep",
       "insuranceAgenc",
       "trading"
     ],
@@ -6749,6 +6870,7 @@
       "financial-services/audit-workpaper-automation",
       "financial-services/carbon-credit-marketplace-verifier",
       "financial-services/grounded-claims",
+      "financial-services/invoice-processing",
       "financial-services/smart-contract-auditor",
       "financial-services/trading-merged"
     ],
@@ -6766,6 +6888,27 @@
         "path": "backend/routes/aiAudit.js:753",
         "route": "/results",
         "originApp": "financial-services/audit-workpaper-automation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIForensicAccountingInvestigator",
+        "path": "backend/src/routes/governedCases.js:6",
+        "route": "/integrations/:outboxId/result",
+        "originApp": "financial-services/invoice-processing"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiTaxPrep",
+        "path": "server/governance/router.js:355",
+        "route": "/integrations/:outboxId/result",
+        "originApp": "financial-services/invoice-processing"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIWealthManagementRoboAdvisor",
+        "path": "server/governance/router.js:355",
+        "route": "/integrations/:outboxId/result",
+        "originApp": "financial-services/trading-merged"
       },
       {
         "kind": "api",
@@ -7093,7 +7236,7 @@
       {
         "kind": "api",
         "sourceProject": "AISmallClaimsCourtGuide",
-        "path": "backend/routes/ai.js:321",
+        "path": "backend/routes/ai.js:325",
         "route": "/settlement-calculator",
         "originApp": "financial-services/grounded-claims"
       },
@@ -7623,13 +7766,31 @@
     ],
     "sourceProjects": [
       "AIGroundedClaims",
-      "claudeTrading"
+      "bitcoin",
+      "claudeTrading",
+      "investment"
     ],
     "consolidatedFromApps": [
+      "financial-services/freqtrade-merged",
       "financial-services/grounded-claims",
+      "financial-services/smart-contract-auditor",
       "financial-services/trading-merged"
     ],
     "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "bitcoin",
+        "path": "trading-platform/backend/src/routes/governedTrading.js:132",
+        "route": "/sources",
+        "originApp": "financial-services/smart-contract-auditor"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "investment",
+        "path": "backend/governed_trading.py:309",
+        "route": "/sources",
+        "originApp": "financial-services/freqtrade-merged"
+      },
       {
         "kind": "api",
         "sourceProject": "claudeTrading",
@@ -8007,7 +8168,7 @@
       {
         "kind": "api",
         "sourceProject": "AISmallClaimsCourtGuide",
-        "path": "backend/routes/ai.js:376",
+        "path": "backend/routes/ai.js:380",
         "route": "/witness-statement-guide",
         "originApp": "financial-services/grounded-claims"
       },
