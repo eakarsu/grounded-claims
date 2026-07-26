@@ -3,7 +3,7 @@
 Industry: **Financial Services**  
 Specialization: **Grounded Claims**
 
-This standalone application consolidates source-backed capabilities into 206 optimized features, including 24 visible data-backed or AI-enabled views. Its public demo SQLite database contains 35 sanitized source rows across 2 imported tables and 120 operational workflow records.
+This standalone application consolidates source-backed capabilities into 206 optimized features, including all 206 source-backed feature views. Its public demo SQLite database contains 35 sanitized source rows across 2 imported tables and 120 operational workflow records.
 
 ## Run locally
 
